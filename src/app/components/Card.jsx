@@ -3,13 +3,8 @@ import React from 'react';
 import { GoStarFill } from "react-icons/go";
 import { FaBagShopping } from "react-icons/fa6";
 
-interface Props{
-  image: String  ;
-  title: String;
-  des: String;
-  price: String;
-}
-export default function Card({image , title , des, price }: Props) {
+
+export default function Card({image , title , des, price }) {
   return (
     <div className=' space-y-2 sm:m-8 p-5 rounded-md bg-white '>
                 <div className='h-[200px] mx-auto w-[200px]'><Image className='h-[100%] w-[100%] object-cover' height={200} width={200} src={image} alt=''/></div>
